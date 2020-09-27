@@ -2,10 +2,55 @@
     font-family: 'Clarendon Cn BT';
     src: url('../font/Clrndnbc.ttf');
 }
+
+.imgUnimarc{
+    margin-left: 3.7rem!important;
+}
 .tituloUno{
     font-family: 'Clarendon Cn BT';
-    font-size: 64px;
+    font-size: 4em;
 }
+
+.grupoBotones{
+    margin-top: 3rem!important;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.recetaMes, .masRecetas{
+    background-color: rgba(218, 41, 28, 1);
+    color:rgba(251, 247, 247, 1);
+    border-color: rgba(251, 247, 247, 1);
+    border: 2px solid #FBF7F7;
+    border-radius: 20px;
+    width: 13vw;
+    height: 8vh;
+ 
+    
+}
+
+.masRecetas{
+    background-color: transparent;
+    margin-left: 3%;
+}
+
+.huesillo{
+    text-align: start;
+}
+.mote{
+    margin-top: 10rem!important;
+    
+
+}
+
+.textoMote, .textoFonda{
+    font-family: 'Clarendon Cn BT';
+    font-size: 1.5em;
+    
+   
+}
+
 
 .navbar-toggler-icon {
     width: 8vw !important; 
@@ -13,6 +58,31 @@
     background-image: url('../img/burger.png') !important
 }
 
+@media (min-width: 360px) and (max-width:768px){
+    .mote{
+        margin-top: 6rem!important;
+    } 
+    .textoMote, .textoFonda{
+        font-size: 1.2em;
+        line-height: 140%;
+    }
+
+    .tituloUno{
+        font-size: 2em;
+    }
+
+    .grupoBotones{
+        margin-top: 0rem!important;
+    }
+
+    .recetaMes, .masRecetas{
+        width: 43vw;
+    height: 6vh;
+    margin-top: 3%;
+    border-radius: 11px;
+    }
+
+}
 @media (min-width: 768px) {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 2.5rem !important;
