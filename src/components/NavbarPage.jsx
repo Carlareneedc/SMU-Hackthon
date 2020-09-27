@@ -7,7 +7,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import especie from '../img/bckgrounduno.png'
 import logo from '../img/logounimarc.png'
 import mote from '../img/moteconhuesillo.png'
-import { MDBBtn } from "mdbreact";
+import { MDBBtn, MDBBtnGroup } from "mdbreact";
+import './StyleCSS/NavbarPage.css'
 class FullPageIntroWithFixedNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -29,43 +30,49 @@ class FullPageIntroWithFixedNavbar extends React.Component {
           <Router>
             <MDBNavbar color="white" dark expand="md" fixed="top">
               <MDBNavbarBrand href="/">
-              <img src={logo} alt="Responsiveimg"/>
+              <img className="ml-5"src={logo}/>
               </MDBNavbarBrand>
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar>
-                <MDBNavbarNav left>
+                <MDBNavbarNav className="ml-5"style={{fontFamily:"Clarendon Cn BT",fontSize:"18px"}}left>
                   <MDBNavItem active>
-                    <MDBNavLink style={{color: "black"}} to="#">Inicio</MDBNavLink>
+                    <MDBNavLink  style={{color: "black"}} to="#">INICIO</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink style={{color: "black"}} to="#">Catalogo</MDBNavLink>
+                    <MDBNavLink className="ml-5"style={{color: "black"}} to="#">CATALOGO</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink style={{color: "black"}} to="#">Club Ahorro</MDBNavLink>
+                    <MDBNavLink className="ml-5"style={{color: "black"}} to="#">CLUB AHORRO</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink style={{color: "black"}} to="#">Ofertas</MDBNavLink>
+                    <MDBNavLink className="ml-5"style={{color: "black"}} to="#">OFERTAS</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink style={{color: "black"}} to="#">Recetas</MDBNavLink>
+                    <MDBNavLink className="ml-5"style={{color: "black"}} to="#">RECETAS</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink style={{color: "black"}} to="#">Locales y Horarios</MDBNavLink>
+                    <MDBNavLink className="ml-5"style={{color: "black"}} to="#">LOCALES Y HORARIOS
+              </MDBNavLink>
                   </MDBNavItem>
+                
                 </MDBNavbarNav>
               </MDBCollapse>
             </MDBNavbar>
           </Router>
           <MDBView src={especie}>
-            <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
-              <h1>Receta del mes</h1>
+            <MDBMask overlay="black-light" className="flex-center text-white text-center">
+              <h1 className="tituloUno">Receta del mes</h1>
               <h5>¿Mote con Huesillo? Si que si. Comencemos la celebracion con un rico motesito helado.</h5>
               <br />
               <p>Que ha tu fonda no le falte nada, con el rico sabor de esta tradicional bebida chile.</p>
-              <MDBBtn rounded color="danger">Receta del Mes</MDBBtn>
-              <MDBBtn rounded outline color="danger">Más Recetas</MDBBtn>
+             {/*  <MDBBtn rounded color="danger">Receta del Mes</MDBBtn>
+              <MDBBtn rounded outline color="danger">Más Recetas</MDBBtn> */}
+             <MDBBtnGroup>
+             <MDBBtn rounded color="danger" size="lg">Receta del Mes</MDBBtn>
+             <MDBBtn rounded outline color="danger" size="lg">Más Recetas</MDBBtn>
+             </MDBBtnGroup>
+             <img src={mote} className="motehuesillo" alt="mote-huesillo"/>
             </MDBMask>
-            <img src={mote} alt="Responsiveimg"/>
           </MDBView>
         </header>
         <main>
