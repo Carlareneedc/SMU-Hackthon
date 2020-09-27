@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Clarendon Cn BT';
+    src: url('../font/Clrndnbc.ttf');
+}
+.tituloUno{
+    font-family: 'Clarendon Cn BT';
+    font-size: 64px;
+}
+
+.navbar-toggler-icon {
+    width: 8vw !important; 
+    height: 3.7vh !important;
+    background-image: url('../img/burger.png') !important
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 2.5rem !important;
+        padding-left: 2.5rem !important;
+    }
+}
