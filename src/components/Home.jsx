@@ -1,11 +1,12 @@
 import React from 'react'
+import Footer from './Footer'
 import NavbarPage from './NavbarPage'
 
 const Home = () => {
     return (
         <div>
-            <h1>SOY EL HOME</h1> 
             <NavbarPage />
+            <Footer />
         </div>
     )
 }
