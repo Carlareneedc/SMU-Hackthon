@@ -29,7 +29,7 @@ class FullPageIntroWithFixedNavbar extends React.Component {
           <Router>
             <MDBNavbar color="white" dark expand="md" fixed="top">
               <MDBNavbarBrand href="/">
-              <img src={logo}/>
+              <img src={logo} alt="Responsiveimg"/>
               </MDBNavbarBrand>
               {!this.state.isWideEnough && <MDBNavbarToggler onClick={this.onClick} />}
               <MDBCollapse isOpen={this.state.collapse} navbar>
@@ -65,7 +65,7 @@ class FullPageIntroWithFixedNavbar extends React.Component {
               <MDBBtn rounded color="danger">Receta del Mes</MDBBtn>
               <MDBBtn rounded outline color="danger">Más Recetas</MDBBtn>
             </MDBMask>
-            <img src={mote}/>
+            <img src={mote} alt="Responsiveimg"/>
           </MDBView>
         </header>
         <main>
