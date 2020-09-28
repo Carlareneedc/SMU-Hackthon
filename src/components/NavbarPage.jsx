@@ -10,16 +10,14 @@ import {
   MDBCollapse,
   MDBNavItem,
   MDBNavLink,
-  MDBContainer,
-  MDBMask,
   MDBView,
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 import especie from "../img/bckgrounduno.png";
 import logo from "../img/logounimarc.png";
 import moteImg from "../img/moteconhuesillo.png";
-import { MDBBtn, MDBBtnGroup } from "mdbreact";
 import "../StyleCSS/NavbarPage.css";
+
 class FullPageIntroWithFixedNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -154,24 +152,6 @@ class FullPageIntroWithFixedNavbar extends React.Component {
             {/*</MDBMask>*/}
           </MDBView>
         </header>
-        <main>
-          <MDBContainer className="text-center my-5">
-            <p align="justify">
-              Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
-            </p>
-          </MDBContainer>
-        </main>
       </div>
     );
   }
