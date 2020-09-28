@@ -26,10 +26,13 @@
     border-radius: 20px;
     width: 13vw;
     height: 8vh;
- 
-    
 }
 
+.motehuesillo{
+   /* width: 41vw;
+    height: 50vh;*/
+
+}
 .masRecetas{
     background-color: transparent;
     margin-left: 3%;
@@ -60,11 +63,12 @@
 
 @media (min-width: 360px) and (max-width:768px){
     .mote{
-        margin-top: 6rem!important;
+        margin-top: 8rem!important;
     } 
     .textoMote, .textoFonda{
         font-size: 1.2em;
         line-height: 140%;
+        margin-top: 8%;
     }
 
     .tituloUno{
@@ -72,14 +76,23 @@
     }
 
     .grupoBotones{
-        margin-top: 0rem!important;
+        margin-top: 2rem!important;
     }
 
     .recetaMes, .masRecetas{
-        width: 43vw;
+        width: 44vw;
     height: 6vh;
     margin-top: 3%;
     border-radius: 11px;
+    }
+
+    .motehuesillo{
+        width: 78vw;
+        margin-top: 7%;
+    }
+
+    .imgUnimarc{
+        
     }
 
 }
