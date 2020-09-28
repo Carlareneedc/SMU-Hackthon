@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Clarendon Cn BT';
+    src: url('../font/Clrndnbc.ttf');
+}
 .App {
     font-family: sans-serif;
     display: flex;
@@ -5,6 +9,16 @@
     justify-content: center;
     height: 100vh;
     background-color: #FBF7F7;
+  }
+
+  .textoCategorias{
+    font-family: 'Clarendon Cn BT';
+    font-size: 3em;
+  }
+
+  .textoEncuentra{
+    font-family: 'Clarendon Cn BT';
+    font-size: 1.5em;
   }
 
 .hCVuYx {

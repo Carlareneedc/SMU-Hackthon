@@ -19,8 +19,11 @@ const Carousele = () => {
 
     return (
         <>
-{/*         <h1 style={{ textAlign: "center" }}>CATEGORIAS</h1> */}
-        <div className="App">
+       
+        <div className="container">
+            <div>
+        <div ><h5 className="textoCategorias mt-5">Categorías</h5>
+        <p className="textoEncuentra">Encuentra la categoría que necesites y asi encontrar la mejor receta para que cocines!</p></div>
           <Carousel breakPoints={breakPoints}> 
             <Item style={{height:'300px'}}>  
                 <a href="/kids"><img src={carro} alt="" className="img-fluid mx-auto"/> </a>                    
@@ -38,6 +41,7 @@ const Carousele = () => {
                 <a href="/Gluten"><img src={gluten} alt="" className=" img-fluid mx-auto"/> </a>  
             </Item>
            </Carousel>
+           </div>
         </div>
       </>
     )

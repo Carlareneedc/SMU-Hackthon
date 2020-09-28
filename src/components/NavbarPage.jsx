@@ -138,7 +138,6 @@ class FullPageIntroWithFixedNavbar extends React.Component {
                     </MDBBtn>
           </MDBBtnGroup>*/}
                 </div>
-
                 <div className="col-sm-12 col-md-2 ml-4 mr-5 d-none d-sm-block ">
                   <img 
 
