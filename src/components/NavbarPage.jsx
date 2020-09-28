@@ -139,7 +139,7 @@ class FullPageIntroWithFixedNavbar extends React.Component {
           </MDBBtnGroup>*/}
                 </div>
                 <div className="col-sm-12 col-md-2" size="md">
-                  <img
+                  <img style={{height:'45vh'}}
                     src={moteImg}
                     className="motehuesillo"
                     alt="mote-huesillo"
